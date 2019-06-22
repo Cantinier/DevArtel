@@ -23,14 +23,14 @@ public class CacheConfiguration {
     private final javax.cache.configuration.Configuration<Object, Object> jcacheConfiguration;
 
     public CacheConfiguration(JHipsterProperties jHipsterProperties) {
-        JHipsterProperties.Cache.Ehcache ehcache =
-            jHipsterProperties.getCache().getEhcache();
+        JHipsterProperties.Cache.Ehcache ehcache
+                = jHipsterProperties.getCache().getEhcache();
 
         jcacheConfiguration = Eh107Configuration.fromEhcacheCacheConfiguration(
-            CacheConfigurationBuilder.newCacheConfigurationBuilder(Object.class, Object.class,
-                ResourcePoolsBuilder.heap(ehcache.getMaxEntries()))
-                .withExpiry(ExpiryPolicyBuilder.timeToLiveExpiration(Duration.ofSeconds(ehcache.getTimeToLiveSeconds())))
-                .build());
+                CacheConfigurationBuilder.newCacheConfigurationBuilder(Object.class, Object.class,
+                        ResourcePoolsBuilder.heap(ehcache.getMaxEntries()))
+                        .withExpiry(ExpiryPolicyBuilder.timeToLiveExpiration(Duration.ofSeconds(ehcache.getTimeToLiveSeconds())))
+                        .build());
     }
 
     @Bean
@@ -43,6 +43,10 @@ public class CacheConfiguration {
         return cm -> {
             createCache(cm, ru.digitbreak.dataservice.domain.Simple.class.getName());
             createCache(cm, ru.digitbreak.dataservice.domain.Employers.class.getName());
+            createCache(cm, ru.digitbreak.dataservice.domain.Capital.class.getName());
+            createCache(cm, ru.digitbreak.dataservice.domain.Categories.class.getName());
+            createCache(cm, ru.digitbreak.dataservice.domain.Disqualify.class.getName());
+            createCache(cm, ru.digitbreak.dataservice.domain.Orgaz.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
