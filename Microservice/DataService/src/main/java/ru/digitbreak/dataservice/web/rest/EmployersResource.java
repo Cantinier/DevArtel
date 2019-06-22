@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 @RequestMapping("/api/employers")
 public class EmployersResource extends AbstractResource<Employers,Long> {
      {
-        log = LoggerFactory.getLogger(SimpleResource.class);
+        log = LoggerFactory.getLogger(EmployersResource.class);
         ENTITY_NAME = "dataServiceEmployers";
         clazz = Employers.class;
     }
