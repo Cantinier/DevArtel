@@ -1,8 +1,5 @@
 import pickle
 from numpy import array
-import logging
-
-logger = logging.getLogger("first_logger")
 
 
 class DataConverter:
@@ -10,9 +7,9 @@ class DataConverter:
 
     def __init__(self):
         if not DataConverter.converter:
-            with open('./data/converter.pickle', 'rb') as data:
+            with open('./app/libs/data/converter.pickle', 'rb') as data:
                 DataConverter.converter = pickle.load(data)
-                logger.info("Converter loaded")
+                #logger.info("Converter loaded")
 
     @staticmethod
     def transform(data: array) -> array:

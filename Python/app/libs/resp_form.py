@@ -1,5 +1,5 @@
 import requests
-from Python.config import DB_URL
+from config import DB_URL
 import logging
 
 logger = logging.getLogger("first_logger")
