@@ -1,0 +1,28 @@
+{
+  "tenderControlApp": {
+    "employers": {
+      "home": {
+        "title": "Employers",
+        "createLabel": "Создать новый Employers",
+        "createOrEditLabel": "Создать или отредактировать Employers",
+        "notFound": "No Employers found"
+      },
+      "created": "Новый Employers создан с идентификатором {{ param }}",
+      "updated": "Employers обновлен с идентификатором {{ param }}",
+      "deleted": "Employers удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Employers {{ id }}?"
+      },
+      "detail": {
+        "title": "Employers"
+      },
+      "inn": "Inn",
+      "kpp": "Kpp",
+      "ogrn": "Ogrn",
+      "datareg": "Datareg",
+      "isurlic": "Isurlic",
+      "employname": "Employname",
+      "description": "Description"
+    }
+  }
+}

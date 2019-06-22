@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "inn",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "kpp",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ogrn",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "datareg",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isurlic",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "employname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190622194329",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "employers",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}
