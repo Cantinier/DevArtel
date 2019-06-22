@@ -24,11 +24,13 @@ public class Capital extends AbstractEntity<Capital> {
 
     @Column(name = "inn")
     private String inn;
-
     @Column(name = "capital")
     private String capital;
     @Column(name = "debt")
     private String debt;
+
+    public Capital() {
+    }
    
 
    
@@ -56,9 +58,5 @@ public class Capital extends AbstractEntity<Capital> {
     public void setDebt(String debt) {
         this.debt = debt;
     }
-
-  
-
-   
 
 }
