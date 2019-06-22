@@ -1,11 +1,11 @@
 version: '2'
 services:
-  webserver-postgresql:
+  tendercontrol-postgresql:
     image: postgres:11.3
     # volumes:
-    #     - ~/volumes/jhipster/WebServer/postgresql/:/var/lib/postgresql/data/
+    #     - ~/volumes/jhipster/TenderControl/postgresql/:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=WebServer
-      - POSTGRES_PASSWORD=123456
+      - POSTGRES_USER=TenderControl
+      - POSTGRES_PASSWORD=
     ports:
       - 5432:5432
