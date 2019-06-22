@@ -3,6 +3,9 @@
 #
 # This configuration will be overridden by the Spring profile you use,
 # for example application-dev.yml if you use the "dev" profile.
+#
+# More information on profiles: https://www.jhipster.tech/profiles/
+# More information on configuration properties: https://www.jhipster.tech/common-application-properties/
 # ===================================================================
 
 # ===================================================================
@@ -54,7 +57,7 @@ management:
 
 spring:
   application:
-    name: WebServer
+    name: TenderControl
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by maven when building the JAR file
@@ -84,13 +87,13 @@ spring:
       enabled: false
   task:
     execution:
-      thread-name-prefix: web-server-task-
+      thread-name-prefix: tender-control-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: web-server-scheduling-
+      thread-name-prefix: tender-control-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -107,9 +110,15 @@ info:
   # Comma separated list of profiles that will trigger the ribbon to show
   display-ribbon-on-profiles: 'dev'
 
+# ===================================================================
+# JHipster specific properties
+#
+# Full reference is available at: https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
 jhipster:
   clientApp:
-    name: 'webServerApp'
+    name: 'tenderControlApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #     allowed-origins: "*"
@@ -119,11 +128,11 @@ jhipster:
   #     allow-credentials: true
   #     max-age: 1800
   mail:
-    from: WebServer@localhost
+    from: TenderControl@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: WebServer API
-    description: WebServer API documentation
+    title: TenderControl API
+    description: TenderControl API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:
@@ -136,6 +145,8 @@ jhipster:
 # Add your own application properties here, see the ApplicationProperties class
 # to have type-safe configuration, like in the JHipsterProperties above
 #
+# More documentation is available at:
+# https://www.jhipster.tech/common-application-properties/
 # ===================================================================
 
 # application:

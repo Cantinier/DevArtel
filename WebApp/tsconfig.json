@@ -1,29 +1,25 @@
 {
   "compilerOptions": {
-    "jsx": "react",
     "target": "es6",
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false,
+    "skipLibCheck": true,
     "suppressImplicitAnyIndexErrors": true,
     "outDir": "target/classes/static/app",
-    "lib": ["es2015", "es2017", "dom"],
+    "lib": ["es7", "dom"],
     "typeRoots": ["node_modules/@types"],
-    "types": ["webpack-env", "jest"],
-    "allowJs": true,
-    "checkJs": false,
     "baseUrl": "./",
     "paths": {
       "app/*": ["src/main/webapp/app/*"]
     },
     "importHelpers": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowJs": true
   },
-  "include": ["src/main/webapp/app/typing.d.ts", "src/main/webapp/app/**/*", "src/test/javascript/spec/**/*"],
+  "include": ["src/main/webapp/app", "src/test/javascript/"],
   "exclude": ["node_modules"]
 }

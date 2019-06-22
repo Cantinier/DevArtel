@@ -1,15 +1,15 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "ru.techbreak.webserver",
+      "packageName": "ru.digitbreak.control",
       "nativeLanguage": "ru"
     },
     "jhipsterVersion": "6.1.0",
     "applicationType": "monolith",
-    "baseName": "WebServer",
-    "packageName": "ru.techbreak.webserver",
-    "packageFolder": "ru/techbreak/webserver",
-    "serverPort": "8080",
+    "baseName": "TenderControl",
+    "packageName": "ru.digitbreak.control",
+    "packageFolder": "ru/digitbreak/control",
+    "serverPort": "8888",
     "authenticationType": "jwt",
     "cacheProvider": "ehcache",
     "enableHibernateCache": true,
@@ -22,10 +22,10 @@
     "serviceDiscoveryType": false,
     "buildTool": "maven",
     "enableSwaggerCodegen": true,
-    "jwtSecretKey": "MDg5YTA3N2QwYzQ0MmYyNTNkMzJhYWQxMmQzY2ZlZjJmOWRlNjc0MGVmYmMzYTBhZjdiNDE5NGMxZDhiNDkxYWFlZGI4MGQyN2JiNjQ2Yzc5NjUzZmJkNTdiNjg3ZDhhZTQ1NmFhNzE0ZmM4NDllNzMwMTQ4YWZmNzBlNTU1NTU=",
+    "jwtSecretKey": "OTE0ODIyYTE0NTc0NTI3MWRmYzc1N2ZmNzQ5ODM4YzlmMTg0Mjc3ZjI1YTMwNDc0MTVkZjg0ZGQ0MWZiYjMzY2FkNDcwM2ZkNmEwNzc0ZTRiN2U0OWU2ZGM0NmFiMGYzZWFjMGI5OWM5ZWVhNjdiODcxMDlhMGRkNzY0NzFiZmY=",
     "useSass": true,
     "clientPackageManager": "npm",
-    "clientFramework": "react",
+    "clientFramework": "angularX",
     "clientTheme": "materia",
     "clientThemeVariant": "primary",
     "testFrameworks": [],

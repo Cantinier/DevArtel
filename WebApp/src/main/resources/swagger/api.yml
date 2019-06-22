@@ -2,12 +2,12 @@
 # This file will be used at compile time to generate Spring-MVC endpoint stubs using openapi-generator
 openapi: '3.0.1'
 info:
-  title: 'WebServer'
+  title: 'TenderControl'
   version: 0.0.1
 servers:
-  - url: http://localhost:8080
+  - url: http://localhost:8888
     description: Developpement server
-  - url: https://localhost:8080
+  - url: https://localhost:8888
     description: Developpement server with TLS Profile
 paths: {}
 
