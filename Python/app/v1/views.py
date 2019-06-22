@@ -3,7 +3,7 @@ from traceback import format_exc
 from flask import Blueprint, request, jsonify
 import logging
 
-from ..libs.some_form import get_some_json
+from ..libs.contractor_checker import ContractorChecker
 from ..libs.resp_form import req_test
 
 blueprints_v1 = Blueprint(__name__, 'blueprints_v1', url_prefix='/v1')
@@ -17,7 +17,7 @@ def get_status():
 
 @blueprints_v1.route('data', methods=['POST'])
 def data():
-    return jsonify(get_some_json(request.json))
+    return jsonify(ContractorChecker.check_contractor(request.json))
 
 
 @blueprints_v1.route('test_rest', methods=['GET'])
