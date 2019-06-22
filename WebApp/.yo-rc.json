@@ -9,7 +9,7 @@
     "baseName": "WebServer",
     "packageName": "ru.techbreak.webserver",
     "packageFolder": "ru/techbreak/webserver",
-    "serverPort": "8080",
+    "serverPort": "8888",
     "authenticationType": "jwt",
     "cacheProvider": "ehcache",
     "enableHibernateCache": true,
