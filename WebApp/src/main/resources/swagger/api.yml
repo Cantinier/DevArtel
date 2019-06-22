@@ -5,9 +5,9 @@ info:
   title: 'TenderControl'
   version: 0.0.1
 servers:
-  - url: http://localhost:8080
+  - url: http://localhost:8888
     description: Developpement server
-  - url: https://localhost:8080
+  - url: https://localhost:8888
     description: Developpement server with TLS Profile
 paths: {}
 

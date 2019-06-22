@@ -1,10 +1,11 @@
 ru\digitbreak\library\jsonview\View$UI_OBJECT.class
+ru\digitbreak\library\jsonview\View$UI_LIST.class
 ru\digitbreak\library\entity\GenericAbstractEntity.class
 ru\digitbreak\library\entity\IGenericEntity.class
 ru\digitbreak\library\specification\GenericSpecification.class
-ru\digitbreak\library\jsonview\View$UI_LIST.class
 ru\digitbreak\library\jsonview\View$BASIC.class
 ru\digitbreak\library\jsonview\View.class
+ru\digitbreak\library\entity\Employers.class
 ru\digitbreak\library\jsonview\View$REST.class
 ru\digitbreak\library\entity\api\IGenericProxyAPI.class
 ru\digitbreak\library\entity\api\dataservice\SimpleProxy.class
