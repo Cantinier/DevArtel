@@ -42,6 +42,7 @@ public class CacheConfiguration {
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
             createCache(cm, ru.digitbreak.dataservice.domain.Simple.class.getName());
+            createCache(cm, ru.digitbreak.dataservice.domain.Employers.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

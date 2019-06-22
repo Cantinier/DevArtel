@@ -31,6 +31,7 @@ spring:
     active: dev
     include:
       - swagger
+      - no-liquibase
       # Uncomment to activate TLS for the dev profile
       #- tls
   devtools:
@@ -44,8 +45,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://localhost:5432/dataservice
-    username: WebServer
-    password: 123456
+    username: service
+    password: service
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -108,7 +109,8 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
-        base64-secret: YjlkMmRjNTg4YjJkM2E0ODViZjg1MTE2MGUzZWJiMzAzZmU3OGQ3YWM5ZGU0YjlkNzNhN2RhZGFiZDIyZjJmNjU2OTU2YTk4Mjg0MzVkODVhYTFjMDYxNTFhOTlhNDRjMzc1MDkxZDk5NTQ5ZjdkMzZlZGYxNWM2YTJjMzliNTU=
+                        
+        base64-secret: YzU5OGQ5NzQxNTA4NmZhYTMyNDkxY2QwZmNjNTEwMzMwYmQ4NDVhZWQ5ZTdhMTNlMGU3MzAxM2ExZTFkY2Q5OWEzMmMzZTRiNzY5Yjk4YjAwNDIzNjg3Zjc2N2FiOTE5YjIzZDI0Y2NjYzMzYTczZWI1MDZjZTZlYjU2ZTViZjk=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
