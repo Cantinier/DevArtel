@@ -1,0 +1,11 @@
+version: '2'
+services:
+  dataservice-postgresql:
+    image: postgres:11.3
+    # volumes:
+    #     - ~/volumes/jhipster/DataService/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=DataService
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
