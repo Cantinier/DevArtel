@@ -5,7 +5,7 @@ import { ProfileInfo } from './profile-info.model';
 @Component({
   selector: 'jhi-page-ribbon',
   template: `
-    <div class="ribbon" *ngIf="ribbonEnv">
+    <div class="ribbon" *ngIf="false">
       <a href="" jhiTranslate="global.ribbon.{{ ribbonEnv }}">{{ ribbonEnv }}</a>
     </div>
   `,
