@@ -1,4 +1,4 @@
-from marshmallow import Schema, fields, post_load, ValidationError
+from marshmallow import Schema, fields, post_load
 import logging
 
 logger = logging.getLogger("first_logger")
@@ -46,6 +46,3 @@ class DataSchema(Schema):
     @post_load
     def make(self, data):
         return DataClass(**data)
-
-
-

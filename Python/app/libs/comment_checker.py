@@ -5,10 +5,10 @@ from numpy import array
 from app.libs.model import ModelLoader
 
 
-class ContractorChecker:
+class CommentChecker:
 
     @staticmethod
-    def check_contractor(json):
+    def check_comment(json):
         try:
             message_parser = DataSchema().load(json)
             values = [list(message_parser.__dict__.values())]
