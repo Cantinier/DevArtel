@@ -1,12 +1,10 @@
 from marshmallow import ValidationError
-from traceback import format_exc
 from flask import Blueprint, request, jsonify
 
 from ..libs.contractor_checker import ContractorChecker
 from ..libs.resp_form import req_test
 
 blueprints_v1 = Blueprint(__name__, 'blueprints_v1', url_prefix='/v1')
-
 
 
 @blueprints_v1.route('get_status', methods=['GET'])

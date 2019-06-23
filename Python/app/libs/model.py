@@ -9,7 +9,6 @@ class ModelLoader:
         if not ModelLoader.model:
             with open('./app/libs/data/model.pickle', 'rb') as data:
                 ModelLoader.model = pickle.load(data)
-                #logger.info("Model loaded")
 
     @staticmethod
     def predict(data: array) -> float:
