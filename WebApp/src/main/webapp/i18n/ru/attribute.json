@@ -1,0 +1,24 @@
+{
+  "tenderControlApp": {
+    "attribute": {
+      "home": {
+        "title": "Attributes",
+        "createLabel": "Создать новый Attribute",
+        "createOrEditLabel": "Создать или отредактировать Attribute",
+        "notFound": "No Attribute found"
+      },
+      "created": "Новый Attribute создан с идентификатором {{ param }}",
+      "updated": "Attribute обновлен с идентификатором {{ param }}",
+      "deleted": "Attribute удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Attribute {{ id }}?"
+      },
+      "detail": {
+        "title": "Attribute"
+      },
+      "value": "Value",
+      "idEmployers": "Id Employers",
+      "idTypeofattribute": "Id Typeofattribute"
+    }
+  }
+}

@@ -9,6 +9,10 @@
         "main": "Сущности",
         "employers": "Employers",
         "typeofattribute": "Typeofattribute",
+        "attribute": "Attribute",
+        "tender": "Tender",
+        "tenderspec": "Tenderspec",
+        "tenderspec": "Tenderspec",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

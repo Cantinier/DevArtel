@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="tender">
+            <h2><span jhiTranslate="tenderControlApp.tender.detail.title">Tender</span> {{tender.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="tenderControlApp.tender.nomertender">Nomertender</span></dt>
+                <dd>
+                    <span>{{tender.nomertender}}</span>
+                </dd>
+                <dt><span jhiTranslate="tenderControlApp.tender.datarun">Datarun</span></dt>
+                <dd>
+                    <span>{{tender.datarun}}</span>
+                </dd>
+                <dt><span jhiTranslate="tenderControlApp.tender.dataend">Dataend</span></dt>
+                <dd>
+                    <span>{{tender.dataend}}</span>
+                </dd>
+                <dt><span jhiTranslate="tenderControlApp.tender.idUser">Id User</span></dt>
+                <dd>
+                    <span>{{tender.idUser}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/tender', tender.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
