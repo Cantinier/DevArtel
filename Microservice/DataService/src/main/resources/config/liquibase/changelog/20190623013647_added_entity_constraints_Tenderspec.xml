@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Tenderspec.
+    -->
+    <changeSet id="20190623013647-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="employers_id"
+                                 baseTableName="tenderspec"
+                                 constraintName="fk_tenderspec_employers_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="employers"/>
+
+        <addForeignKeyConstraint baseColumnNames="tender_id"
+                                 baseTableName="tenderspec"
+                                 constraintName="fk_tenderspec_tender_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tender"/>
+
+    </changeSet>
+</databaseChangeLog>

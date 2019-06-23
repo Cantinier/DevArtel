@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "DataService",
+    "relationships": [
+        {
+            "relationshipName": "employers",
+            "otherEntityName": "employers",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "tender",
+            "otherEntityName": "tender",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "numberofdock",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190623013647",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "tenderspec",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "DataService"
+}

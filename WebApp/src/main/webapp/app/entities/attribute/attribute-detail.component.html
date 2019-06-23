@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="attribute">
+            <h2><span jhiTranslate="tenderControlApp.attribute.detail.title">Attribute</span> {{attribute.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="tenderControlApp.attribute.value">Value</span></dt>
+                <dd>
+                    <span>{{attribute.value}}</span>
+                </dd>
+                <dt><span jhiTranslate="tenderControlApp.attribute.idEmployers">Id Employers</span></dt>
+                <dd>
+                    <div *ngIf="attribute.idEmployers">
+                        <a [routerLink]="['/employers', attribute.idEmployers?.id, 'view']">{{attribute.idEmployers?.id}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="tenderControlApp.attribute.idTypeofattribute">Id Typeofattribute</span></dt>
+                <dd>
+                    <div *ngIf="attribute.idTypeofattribute">
+                        <a [routerLink]="['/typeofattribute', attribute.idTypeofattribute?.id, 'view']">{{attribute.idTypeofattribute?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/attribute', attribute.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+{
+  "tenderControlApp": {
+    "employers": {
+      "home": {
+        "title": "Employers",
+        "createLabel": "Create a new Employers",
+        "createOrEditLabel": "Create or edit a Employers",
+        "notFound": "No Employers found"
+      },
+      "created": "A new Employers is created with identifier {{ param }}",
+      "updated": "A Employers is updated with identifier {{ param }}",
+      "deleted": "A Employers is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Employers {{ id }}?"
+      },
+      "detail": {
+        "title": "Employers"
+      },
+      "inn": "Inn",
+      "kpp": "Kpp",
+      "ogrn": "Ogrn",
+      "datareg": "Datareg",
+      "isurlic": "Isurlic",
+      "employname": "Employname",
+      "description": "Description"
+    }
+  }
+}

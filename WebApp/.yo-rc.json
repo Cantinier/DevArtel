@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "ru.digitbreak.control",
+      "nativeLanguage": "ru"
+    },
+    "jhipsterVersion": "6.1.0",
+    "applicationType": "monolith",
+    "baseName": "TenderControl",
+    "packageName": "ru.digitbreak.control",
+    "packageFolder": "ru/digitbreak/control",
+    "serverPort": "8888",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "OTE0ODIyYTE0NTc0NTI3MWRmYzc1N2ZmNzQ5ODM4YzlmMTg0Mjc3ZjI1YTMwNDc0MTVkZjg0ZGQ0MWZiYjMzY2FkNDcwM2ZkNmEwNzc0ZTRiN2U0OWU2ZGM0NmFiMGYzZWFjMGI5OWM5ZWVhNjdiODcxMDlhMGRkNzY0NzFiZmY=",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "materia",
+    "clientThemeVariant": "primary",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "ru",
+    "languages": [
+      "ru",
+      "en"
+    ]
+  }
+}

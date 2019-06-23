@@ -1,0 +1,59 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-employers-heading" jhiTranslate="tenderControlApp.employers.home.createOrEditLabel">Create or edit a Employers</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!editForm.get('id').value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="tenderControlApp.employers.inn" for="field_inn">Inn</label>
+                    <input type="text" class="form-control" name="inn" id="field_inn"
+                           formControlName="inn"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="tenderControlApp.employers.kpp" for="field_kpp">Kpp</label>
+                    <input type="text" class="form-control" name="kpp" id="field_kpp"
+                           formControlName="kpp"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="tenderControlApp.employers.ogrn" for="field_ogrn">Ogrn</label>
+                    <input type="text" class="form-control" name="ogrn" id="field_ogrn"
+                           formControlName="ogrn"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="tenderControlApp.employers.datareg" for="field_datareg">Datareg</label>
+                    <input type="text" class="form-control" name="datareg" id="field_datareg"
+                           formControlName="datareg"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="tenderControlApp.employers.isurlic" for="field_isurlic">Isurlic</label>
+                    <input type="checkbox" class="form-control" name="isurlic" id="field_isurlic"
+                           formControlName="isurlic"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="tenderControlApp.employers.employname" for="field_employname">Employname</label>
+                    <input type="text" class="form-control" name="employname" id="field_employname"
+                           formControlName="employname"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="tenderControlApp.employers.description" for="field_description">Description</label>
+                    <input type="text" class="form-control" name="description" id="field_description"
+                           formControlName="description"/>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+{
+  "home": {
+    "title": "Welcome to System of Tender Control!",
+    "subtitle": "This is our homepage",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  }
+}
