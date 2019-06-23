@@ -1,0 +1,25 @@
+{
+  "tenderControlApp": {
+    "tenderspec": {
+      "home": {
+        "title": "Tenderspecs",
+        "createLabel": "Создать новый Tenderspec",
+        "createOrEditLabel": "Создать или отредактировать Tenderspec",
+        "notFound": "No Tenderspec found"
+      },
+      "created": "Новый Tenderspec создан с идентификатором {{ param }}",
+      "updated": "Tenderspec обновлен с идентификатором {{ param }}",
+      "deleted": "Tenderspec удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Tenderspec {{ id }}?"
+      },
+      "detail": {
+        "title": "Tenderspec"
+      },
+      "numberofdock": "Numberofdock",
+      "description": "Description",
+      "employers": "Employers",
+      "tender": "Tender"
+    }
+  }
+}

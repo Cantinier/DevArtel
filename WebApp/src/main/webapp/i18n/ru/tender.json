@@ -1,0 +1,25 @@
+{
+  "tenderControlApp": {
+    "tender": {
+      "home": {
+        "title": "Tenders",
+        "createLabel": "Создать новый Tender",
+        "createOrEditLabel": "Создать или отредактировать Tender",
+        "notFound": "No Tender found"
+      },
+      "created": "Новый Tender создан с идентификатором {{ param }}",
+      "updated": "Tender обновлен с идентификатором {{ param }}",
+      "deleted": "Tender удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Tender {{ id }}?"
+      },
+      "detail": {
+        "title": "Tender"
+      },
+      "nomertender": "Nomertender",
+      "datarun": "Datarun",
+      "dataend": "Dataend",
+      "idUser": "Id User"
+    }
+  }
+}

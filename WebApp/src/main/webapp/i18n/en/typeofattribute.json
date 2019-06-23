@@ -1,0 +1,23 @@
+{
+  "tenderControlApp": {
+    "typeofattribute": {
+      "home": {
+        "title": "Typeofattributes",
+        "createLabel": "Create a new Typeofattribute",
+        "createOrEditLabel": "Create or edit a Typeofattribute",
+        "notFound": "No Typeofattribute found"
+      },
+      "created": "A new Typeofattribute is created with identifier {{ param }}",
+      "updated": "A Typeofattribute is updated with identifier {{ param }}",
+      "deleted": "A Typeofattribute is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Typeofattribute {{ id }}?"
+      },
+      "detail": {
+        "title": "Typeofattribute"
+      },
+      "name": "Name",
+      "datatype": "Datatype"
+    }
+  }
+}

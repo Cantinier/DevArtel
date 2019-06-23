@@ -48,6 +48,7 @@ public class CacheConfiguration {
             createCache(cm, ru.digitbreak.dataservice.domain.Disqualify.class.getName());
             createCache(cm, ru.digitbreak.dataservice.domain.Orgaz.class.getName());
             createCache(cm, ru.digitbreak.dataservice.domain.Tender.class.getName());
+            createCache(cm, ru.digitbreak.dataservice.domain.Tenderspec.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

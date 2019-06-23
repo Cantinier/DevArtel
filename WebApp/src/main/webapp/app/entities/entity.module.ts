@@ -7,6 +7,22 @@ import { RouterModule } from '@angular/router';
       {
         path: 'employers',
         loadChildren: './employers/employers.module#TenderControlEmployersModule'
+      },
+      {
+        path: 'typeofattribute',
+        loadChildren: './typeofattribute/typeofattribute.module#TenderControlTypeofattributeModule'
+      },
+      {
+        path: 'attribute',
+        loadChildren: './attribute/attribute.module#TenderControlAttributeModule'
+      },
+      {
+        path: 'tender',
+        loadChildren: './tender/tender.module#TenderControlTenderModule'
+      },
+      {
+        path: 'tenderspec',
+        loadChildren: './tenderspec/tenderspec.module#TenderControlTenderspecModule'
       }
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ])

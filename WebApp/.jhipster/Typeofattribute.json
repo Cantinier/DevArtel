@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "datatype",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190622234937",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "typeofattribute",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}
