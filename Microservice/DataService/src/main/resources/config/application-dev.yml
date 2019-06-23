@@ -45,8 +45,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://localhost:5432/dataservice
-    username: service
-    password: service
+    username: WebServer
+    password: 123456
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -109,7 +109,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
-                        
+
         base64-secret: YzU5OGQ5NzQxNTA4NmZhYTMyNDkxY2QwZmNjNTEwMzMwYmQ4NDVhZWQ5ZTdhMTNlMGU3MzAxM2ExZTFkY2Q5OWEzMmMzZTRiNzY5Yjk4YjAwNDIzNjg3Zjc2N2FiOTE5YjIzZDI0Y2NjYzMzYTczZWI1MDZjZTZlYjU2ZTViZjk=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
