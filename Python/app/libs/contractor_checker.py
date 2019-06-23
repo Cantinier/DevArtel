@@ -2,7 +2,7 @@ from marshmallow import ValidationError
 from app.libs.data_form import DataSchema
 from app.libs.data_converter import DataConverter
 from numpy import array
-from app.libs.model import ModelLoader
+from app.libs.model_contr import ModelLoader
 
 
 class ContractorChecker:

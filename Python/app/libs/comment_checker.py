@@ -2,19 +2,25 @@ from marshmallow import ValidationError
 from app.libs.data_form import DataSchema
 from app.libs.data_converter import DataConverter
 from numpy import array
-from app.libs.model import ModelLoader
+from app.libs.model_comment import ModelLoader, Tokenizer
 
 
 class CommentChecker:
 
     @staticmethod
+    def tokenize(text):
+        tokenizer = Tokenizer()
+        return tokenizer.tokenize(text)
+
+
+
+    @staticmethod
     def check_comment(json):
         try:
-            message_parser = DataSchema().load(json)
-            values = [list(message_parser.__dict__.values())]
-            data_array = array(values).astype('float32')
-            converted_data = DataConverter().transform(data_array)
-            predict = float(ModelLoader().predict(converted_data)[0][0])
-            return {'predict': predict}
+            text_from_json = json['text']
+            tokenizer_text = CommentChecker.tokenize(text_from_json)
+            check = ModelLoader().check(tokenizer_text)
+
+            return {'result': check}
         except ValidationError:
             raise

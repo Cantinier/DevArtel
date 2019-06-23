@@ -14,13 +14,13 @@ def get_status():
 
 
 @blueprints_v1.route('check_contractor', methods=['POST'])
-def data():
+def check_contractor():
     print(request.json)
     return jsonify(ContractorChecker.check_contractor(request.json))
 
 
 @blueprints_v1.route('check_comment', methods=['POST'])
-def data():
+def check_cmnt():
     print(request.json)
     return jsonify(CommentChecker.check_comment(request.json))
 
