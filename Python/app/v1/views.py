@@ -2,6 +2,7 @@ from marshmallow import ValidationError
 from flask import Blueprint, request, jsonify
 
 from ..libs.contractor_checker import ContractorChecker
+from ..libs.comment_checker import CommentChecker
 from ..libs.resp_form import req_test
 
 blueprints_v1 = Blueprint(__name__, 'blueprints_v1', url_prefix='/v1')
@@ -16,6 +17,12 @@ def get_status():
 def data():
     print(request.json)
     return jsonify(ContractorChecker.check_contractor(request.json))
+
+
+@blueprints_v1.route('check_comment', methods=['POST'])
+def data():
+    print(request.json)
+    return jsonify(CommentChecker.check_comment(request.json))
 
 
 @blueprints_v1.route('test_rest', methods=['GET'])
